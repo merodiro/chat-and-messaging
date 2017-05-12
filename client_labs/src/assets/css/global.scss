@@ -1,0 +1,27 @@
+$icon-font-path: '~/bootstrap-sass/assets/fonts/bootstrap/';
+@import 'variables';
+@import '~bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import 'bootswatch';
+
+
+$fa-font-path:'~font-awesome/fonts/';
+@import '~font-awesome/scss/font-awesome.scss';
+
+.pointer {
+  cursor: pointer;
+}
+.navbar-default .navbar-nav a.router-link-active {
+  color: #333333;
+  background-color: transparent;
+}
+.PrivateMessage {
+  .nav-pills.PrivateMessage-Sidebar {
+    a.router-link-active {
+      background-color: #2c8fbb;
+      color: #fff;
+    }
+  }
+  .unread {
+    font-weight: bold;
+  }
+}
