@@ -9,8 +9,8 @@
   "author": "Amr",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0",
-    "redis": "^2.6.5",
-    "socket.io": "^1.7.2"
+    "express": "^4.16.0",
+    "redis": "^3.1.1",
+    "socket.io": "^3.0.0"
   }
 }
