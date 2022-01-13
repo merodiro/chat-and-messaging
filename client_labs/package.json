@@ -8,24 +8,27 @@
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src",
-    "deploy": "node node_modules\\gh-pages\\bin\\gh-pages -d dist"
+    "deploy": "node node_modules\\gh-pages\\bin\\gh-pages -d dist",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap-sass": "^3.4.0",
     "font-awesome": "^4.7.0",
     "loadash": "^0.0.1",
-    "moment": "^2.17.1",
-    "node-sass": "^4.1.1",
+    "moment": "^2.19.3",
+    "node-sass": "^7.0.0",
     "push-dir": "^0.4.1",
     "pusher-js": "^4.0.0",
     "sass-loader": "^4.1.1",
-    "vue": "^2.1.0",
+    "vue": "^2.5.17",
     "vue-focus": "^2.1.0",
     "vue-multiselect": "^2.0.0-beta.13",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.1.1",
-    "vue-socket.io": "^2.1.0",
-    "vuex": "^2.1.1"
+    "vue-socket.io": "^3.0.0",
+    "vuex": "^2.1.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
@@ -72,5 +75,6 @@
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
-  }
+  },
+  "snyk": true
 }
