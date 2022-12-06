@@ -9,7 +9,7 @@
   "author": "Amr",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0",
+    "express": "^4.17.3",
     "redis": "^2.6.5",
     "socket.io": "^1.7.2"
   }
